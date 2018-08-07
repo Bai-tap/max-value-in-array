@@ -24,5 +24,16 @@ public class MaxValueInArray {
         for (int j = 0; j < array.length; j++) {
             System.out.print(array[j] + "\t");
         }
+        System.out.println();
+        int max = array[0];
+        int index = 1;
+        for (int j = 0; j < array.length; j++) {
+            if (max < array[j]) {
+                max = array[j];
+                index = j + 1;
+            }
+        }
+        System.out.println("The biggest property value in this list is: "
+                + max + ", position is:" + index);
     }
 }
